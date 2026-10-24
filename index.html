@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phụ Kiện Điện Thoại Bến Tre - Phụ Kiện 88 chuyên phụ kiện và Sửa chữa điện thoại hàng đầu Miền Tây</title>
+<meta name="description" content="Phụ Kiện 88 bến tre chuyên phụ kiện và Sửa chữa điện thoại hàng đầu Miền Tây. Ốp Lưng - Bao Da -Tai Nghe - Cáp Sạc - Dán Cường Lực - Dán PPF USA - Sửa Chữa Lấy Liền - Ép...">
+<link rel="icon" href="images/uploads/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0b;--panel:#161616;--line:#2a2a2a;--gold:#fecd08;--text:#f2f2f2;--muted:#a9a9a9;--r:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font:15px/1.6 "Be Vietnam Pro",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+section{padding:40px 0}
+h2{font-size:22px;font-weight:800;color:var(--gold);text-transform:uppercase;margin-bottom:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 20px;border-radius:999px;font-weight:600;background:var(--gold);color:#000}
+.btn.ghost{background:none;color:var(--gold);border:1px solid var(--gold)}
+.more{text-align:center;margin-top:18px}
+
+/* Header */
+header{position:sticky;top:0;z-index:20;background:#000;border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:16px;height:64px}
+.hd .logo img{height:44px;width:auto}
+nav{display:flex;gap:4px;margin-left:auto}
+nav>div{position:relative}
+nav>div>a{display:block;padding:8px 12px;font-weight:600;border-radius:8px}
+nav>div>a:hover{color:var(--gold)}
+nav .sub{display:none;position:absolute;top:100%;left:0;min-width:260px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:8px}
+nav .sub a{display:block;padding:7px 10px;border-radius:6px;font-size:14px}
+nav .sub a:hover{background:#222;color:var(--gold)}
+nav>div:hover .sub,nav>div:focus-within .sub{display:block}
+.hotline{white-space:nowrap}
+#menuBtn{display:none;margin-left:auto;background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;width:44px;height:44px;font-size:20px}
+@media(max-width:960px){
+  #menuBtn{display:block}
+  .hotline{display:none}
+  nav{display:none;position:absolute;top:64px;left:0;right:0;background:#000;flex-direction:column;padding:8px 16px 16px;border-bottom:1px solid var(--line);max-height:calc(100vh - 64px);overflow:auto}
+  nav.open{display:flex}
+  nav .sub{display:block;position:static;border:0;background:none;padding:0 0 0 12px}
+}
+
+/* Hero */
+.hero img{width:100%;border-radius:var(--r)}
+.hero{padding-top:20px}
+
+/* Categories */
+.cats{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}
+.cats a{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:10px;text-align:center;font-size:13px;font-weight:600;transition:border-color .2s}
+.cats a:hover{border-color:var(--gold)}
+.cats img{aspect-ratio:1;object-fit:contain;margin:0 auto 6px;width:72px}
+@media(max-width:520px){.cats{grid-template-columns:repeat(3,1fr);gap:8px}.cats a{font-size:12px;padding:8px 6px}.cats img{width:52px}}
+
+/* Intro + services */
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.intro p{color:var(--muted);margin-bottom:12px}
+.intro strong{color:var(--text)}
+.svc{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:24px}
+.svc a{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;text-align:center;font-weight:600;font-size:14px}
+.svc a:hover{border-color:var(--gold);color:var(--gold)}
+.svc span{display:block;padding:10px}
+@media(max-width:860px){.intro{grid-template-columns:1fr}.svc{grid-template-columns:repeat(2,1fr)}}
+
+/* Products */
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:16px;scrollbar-width:thin}
+.tabs button{flex:none;min-height:40px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:600 14px inherit;font-family:inherit;cursor:pointer}
+.tabs button.on{background:var(--gold);color:#000;border-color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s}
+.card:hover{border-color:var(--gold)}
+.card img{aspect-ratio:1;object-fit:cover;width:100%;background:#fff}
+.card h3{font-size:13.5px;font-weight:600;padding:10px 12px 4px;line-height:1.4}
+.card .cta{margin:auto 12px 12px;font-size:13px;color:var(--gold)}
+@media(max-width:520px){.grid{grid-template-columns:repeat(2,1fr);gap:8px}}
+.promo{background:linear-gradient(180deg,#1a1500,var(--bg))}
+
+/* Perks */
+.perks{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.perks div{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px;text-align:center}
+.perks b{display:block;color:var(--gold);font-size:16px}
+.perks span{color:var(--muted);font-size:14px}
+@media(max-width:760px){.perks{grid-template-columns:repeat(2,1fr)}}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.gallery img{aspect-ratio:4/3;object-fit:cover;border-radius:8px;width:100%}
+@media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr)}}
+
+/* Branches */
+.branches{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.branch{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:6px}
+.branch h3{color:var(--gold);font-size:16px}
+.branch p{font-size:14px;color:var(--muted)}
+.branch .row{display:flex;gap:8px;margin-top:auto;padding-top:8px;flex-wrap:wrap}
+.branch .btn{min-height:38px;padding:0 14px;font-size:13px}
+@media(max-width:960px){.branches{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.branches{grid-template-columns:1fr}}
+
+/* News */
+.news{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.news a{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.news a:hover{border-color:var(--gold)}
+.news img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.news div{padding:12px}
+.news h3{font-size:14.5px;line-height:1.4}
+.news time{display:block;color:var(--muted);font-size:12.5px;margin-top:6px}
+.news .lead{grid-column:span 2}
+.news .lead p{color:var(--muted);font-size:13.5px;margin-top:6px}
+.news-label{font-size:15px;color:var(--text);margin:22px 0 10px;font-weight:800;text-transform:uppercase}
+@media(max-width:960px){.news{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.news{grid-template-columns:1fr}.news .lead{grid-column:auto}}
+
+/* Footer */
+footer{background:#000;border-top:1px solid var(--line);padding:36px 0 90px;font-size:14px;color:var(--muted)}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px}
+footer h4{color:var(--gold);text-transform:uppercase;font-size:14px;margin-bottom:10px}
+footer li{list-style:none;margin-bottom:6px}
+footer a:hover{color:var(--gold)}
+footer .co b{color:var(--text)}
+.copy{border-top:1px solid var(--line);margin-top:24px;padding-top:16px;font-size:13px}
+@media(max-width:860px){.ft{grid-template-columns:1fr 1fr}.ft .co{grid-column:1/-1}}
+
+/* Floating contact */
+.float{position:fixed;right:16px;bottom:16px;z-index:30;display:flex;flex-direction:column;gap:10px}
+.float a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:12px;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+.float .call{background:#e11d2a;color:#fff}
+.float .zalo{background:#0068ff;color:#fff}
+.float .fb{background:#1877f2;color:#fff}
+.float svg{width:24px;height:24px;fill:currentColor}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#top" aria-label="Phụ Kiện 88"><img src="images/uploads/logo-phukien88-4.webp" alt="Phụ Kiện 88"></a>
+    <button id="menuBtn" aria-label="Mở menu">☰</button>
+    <nav id="nav">
+      <div><a href="#top">Trang chủ</a></div>
+      <div><a href="https://phukien88.vn/about/">Giới thiệu</a>
+        <div class="sub">
+          <a href="https://phukien88.vn/news/doi-ngu-phu-kien-88-48.html">Đội ngũ phụ kiện 88</a>
+          <a href="https://phukien88.vn/news/phu-kien-88-gan-ket-yeu-thuong-47.html">Hoạt động thiện nguyện</a>
+        </div>
+      </div>
+      <div><a href="#dich-vu">Dịch vụ</a>
+        <div class="sub">
+          <a href="https://phukien88.vn/page/dan-ppf-usa-chinh-hang-bao-ve-dien-thoai-toan-dien-tai-phu-kien-88.html">Dán PPF</a>
+          <a href="https://phukien88.vn/page/dan-cuong-luc-bao-ve-man-hinh-dien-thoai-tai-phu-kien-88.html">Dán Cường Lực</a>
+          <a href="https://phukien88.vn/page/thay-pin-chinh-hang-an-toan-ben-bi-tai-phu-kien-88.html">Thay pin</a>
+          <a href="https://phukien88.vn/page/thay-vo-dien-thoai-doi-moi-ngoai-hinh-tai-phu-kien-88.html">Thay vỏ</a>
+          <a href="https://phukien88.vn/page/sua-chua-dien-thoai-khoi-phuc-hieu-nang-tai-phu-kien-88.html">Sửa chữa điện thoại</a>
+        </div>
+      </div>
+      <div><a href="#san-pham">Sản phẩm</a>
+        <div class="sub" id="navCats"></div>
+      </div>
+      <div><a href="#tin-tuc">Tin tức</a></div>
+      <div><a href="#lien-he">Liên hệ</a></div>
+    </nav>
+    <a class="btn hotline" href="tel:0833898688">☎ 0833.898.688</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <div class="wrap hero">
+    <a href="https://phukien88.vn/news/uu-dai-dac-biet-phu-kien-88-46.html">
+      <img src="images/slider/phukien88-banner-01.webp" width="1400" height="502"
+        alt="Chúng tôi nỗ lực trở thành hệ thống bán lẻ phụ kiện và sửa chữa điện thoại uy tín hàng đầu Miền Tây. Hotline 0833.898.688. Ép kính - Thay pin - Thay màn hình - Ốp lưng - Dán cường lực">
+    </a>
+  </div>
+
+  <section id="danh-muc">
+    <div class="wrap">
+      <h2>Danh mục sản phẩm</h2>
+      <div class="cats" id="cats"></div>
+    </div>
+  </section>
+
+  <section id="dich-vu">
+    <div class="wrap">
+      <div class="intro">
+        <div>
+          <h2>Phụ Kiện 88 - Phụ Kiện Điện Thoại Bến Tre</h2>
+          <p>Tại <strong>Phụ Kiện 88</strong>, chúng tôi mang đến giải pháp toàn diện cho dế yêu của bạn: dán PPF USA cao cấp, dán cường lực chống va đập, thay pin bền bỉ, ép kính chuẩn xác, thay vỏ sang trọng… Mỗi dịch vụ đều được thực hiện bởi đội ngũ kỹ thuật lành nghề, với linh kiện và vật liệu cao cấp, mang lại sự an tâm, tinh tế và đẳng cấp trong từng chi tiết.</p>
+          <p><strong>Phụ Kiện 88 nỗ lực trở thành hệ thống bán lẻ phụ kiện và sửa chữa điện thoại hàng đầu miền tây.</strong></p>
+          <a class="btn" href="tel:0833898688">Gọi ngay 0833.898.688</a>
+        </div>
+        <a href="https://phukien88.vn/news/uu-dai-dac-biet-phu-kien-88-46.html" title="Ưu điểm đặc biệt tại Phụ Kiện 88">
+          <img src="images/uploads/popup-phukien.webp" width="1400" height="788" style="border-radius:var(--r)"
+            alt="Ưu điểm đặc biệt tại Phụ Kiện 88: Giảm ngay 17% khi dán full combo cho iPhone 17 Series. Cường lực cao cấp phủ nano siêu mượt, chống ánh sáng xanh và tia UV, chống va đập tốt. PPF USA bảo vệ máy không bị trầy xước, chống oxi hóa, chuẩn khít từng chi tiết. Len camera bảo vệ ống kính tránh trầy xước, nứt vỡ, giữ chất lượng hình ảnh. Ốp lưng bảo vệ máy khi rơi rớt va đập, tăng vẻ đẹp của máy.">
+        </a>
+      </div>
+      <div class="svc" id="svc"></div>
+    </div>
+  </section>
+
+  <section class="promo" id="khuyen-mai">
+    <div class="wrap">
+      <h2>🔥 Hàng khuyến mãi giảm giá sốc</h2>
+      <div class="grid" id="promo"></div>
+      <div class="more"><a class="btn ghost" href="https://phukien88.vn/san-pham/blockcat/Hang-khuyen-mai-giam-gia-soc/">Xem thêm hàng khuyến mãi, giá giảm sốc</a></div>
+    </div>
+  </section>
+
+  <section id="san-pham">
+    <div class="wrap">
+      <h2>Sản phẩm nổi bật</h2>
+      <div class="tabs" id="tabs" role="tablist"></div>
+      <div class="grid" id="products"></div>
+      <div class="more"><a class="btn ghost" id="moreLink" href="#">Xem thêm sản phẩm</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap perks">
+      <div><b>Đổi hàng miễn phí</b><span>Trong 7 ngày</span></div>
+      <div><b>Hỗ trợ bảo hành</b><span>Từ 1 đến 5 năm</span></div>
+      <div><b>Đặt hàng online</b><span>Giao tận nhà miễn phí</span></div>
+      <div><b>Thanh toán tiện lợi</b><span>Khi nhận hàng</span></div>
+    </div>
+  </section>
+
+  <section id="hinh-anh">
+    <div class="wrap">
+      <h2>Hình ảnh hoạt động của Phụ Kiện 88</h2>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <section id="lien-he">
+    <div class="wrap">
+      <h2>Hệ thống cửa hàng</h2>
+      <div class="branches" id="branches"></div>
+    </div>
+  </section>
+
+  <section id="tin-tuc">
+    <div class="wrap">
+      <h2>Tin tức nổi bật</h2>
+      <div class="news" id="newsHot"></div>
+      <div class="news-label">Tin tức mới</div>
+      <div class="news" id="newsNew"></div>
+      <div class="more"><a class="btn ghost" href="https://phukien88.vn/news/">Xem thêm bài tin khác</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="co">
+        <h4>Hộ kinh doanh HKD Phụ Kiện 88</h4>
+        <ul>
+          <li>35B2 Đoàn Hoàng Minh, Phường Phú Khương, TP. Bến Tre, Tỉnh Bến Tre</li>
+          <li>☎ <a href="tel:0833898688"><b>0833 898 688</b></a></li>
+          <li>✉ <a href="mailto:phukien88team@gmail.com">phukien88team@gmail.com</a></li>
+          <li>Mã số thuế: 13011 04477 -001</li>
+          <li>Mã số đăng ký HKD: 55A8028344, cấp ngày 17/06/2025 bởi UBND TP Bến Tre Phòng Tài Chính - Kế Hoạch</li>
+          <li>Người đại diện: Ngô Hồng Thao</li>
+          <li>Giờ làm việc: 7h00 - 22h00</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Chính sách</h4>
+        <ul>
+          <li><a href="https://phukien88.vn/page/chinh-sach-bao-mat.html">Chính Sách Bảo Mật</a></li>
+          <li><a href="https://phukien88.vn/page/chinh-sach-giao-nhan-va-kiem-hang.html">Chính Sách Giao Nhận Và Kiểm Hàng</a></li>
+          <li><a href="https://phukien88.vn/page/chinh-sach-thanh-toan.html">Chính Sách Thanh Toán</a></li>
+          <li><a href="https://phukien88.vn/page/huong-dan-mua-hang.html">Hướng Dẫn Mua Hàng</a></li>
+          <li><a href="https://phukien88.vn/page/chinh-sach-bao-hanh.html">Chính sách bảo hành</a></li>
+          <li>Chính sách hoàn tiền</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Về Phụ Kiện 88</h4>
+        <ul>
+          <li><a href="#top">Trang chủ</a></li>
+          <li><a href="https://phukien88.vn/about/">Giới thiệu</a></li>
+          <li>Tuyển dụng</li>
+          <li><a href="https://phukien88.vn/news/">Tin Tức</a></li>
+          <li><a href="http://online.gov.vn/nen-tang/78e3d99f-685f-4a1e-94c4-0193453a52e6" target="_blank" rel="noopener">Đã thông báo Bộ Công Thương</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Fan page</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/phukiendienthoaibentre88/" target="_blank" rel="noopener">Facebook Phụ Kiện 88 Bến Tre</a></li>
+          <li><a href="https://www.facebook.com/phukien88cantho" target="_blank" rel="noopener">Facebook Phụ Kiện 88 Cần Thơ</a></li>
+          <li><a href="https://zalo.me/0833898688" target="_blank" rel="noopener">Zalo 0833 898 688</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">Copyright © 2025 Phụ Kiện Điện Thoại Bến Tre - Phụ Kiện 88 chuyên phụ kiện và Sửa chữa điện thoại hàng đầu Miền Tây.</div>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="fb" href="https://www.facebook.com/phukiendienthoaibentre88/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+  <a class="zalo" href="https://zalo.me/0833898688" target="_blank" rel="noopener" aria-label="Zalo">Zalo</a>
+  <a class="call" href="tel:0833898688" aria-label="Gọi 0833 898 688"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+</div>
+
+<script>
+const S = 'https://phukien88.vn';
+
+const CATS = [
+  ['Kính Cường Lực - Dán Mặt Trước', 'kinh-cuong-luc-dan-mat-truoc', '2025_09/dan-man-hinh'],
+  ['Dán PPF USA - Dán mặt sau', 'dan-ppf', '2025_09/dan-man-hinh'],
+  ['Cáp Sạc và Bộ Sạc', 'cap-sac-va-bo-sac', '2025_09/cap-sac'],
+  ['Ốp Lưng Điện Thoại', 'op-lung-dien-thoai', '2025_09/bao-da-op-lung'],
+  ['Tai Nghe có Dây và Không Dây', 'tai-nghe-co-day-va-khong-day', '2025_09/phu-kien-apple'],
+  ['Pin Dự Phòng', 'Pin-Du-Phong', '2025_09/pinduphong111'],
+  ['Lens Bảo Vệ Camera', 'lens-bao-ve-camera', '2025_09/lencams111'],
+  ['Loa Bluetooth và Loa Karaoke', 'loa-bluetooth-va-loa-karaoke', '2025_09/loablutooth111'],
+  ['Đế Giữ Điện Thoại, iPad và Laptop', 'de-giu-dien-thoai-ipad-va-laptop', '2025_09/degiudienthoai'],
+  ['Phụ Kiện Ô Tô', 'phu-kien-o-to', '2025_09/phukienoto'],
+  ['Cáp OTG, Bộ Chuyển Đổi và Mic Thu Âm Không Dây', 'cap-otg-bo-chuyen-doi-va-mic-thu-am-khong-day', '2025_09/capotg1111'],
+  ['Phụ Kiện Game và Laptop', 'phu-kien-game-va-laptop', '2025_09/phukiengame'],
+  ['Thẻ Nhớ và USB', 'the-nho-va-usb', '2025_09/thenhousb'],
+  ['Phụ Kiện Apple Watch', 'phu-kien-apple-watch', '2025_09/applewatch'],
+  ['Phụ Kiện iPad và Máy Tính Bảng', 'phu-kien-ipad-va-may-tinh-bang', '2025_09/tablet1111'],
+];
+
+const SERVICES = [
+  ['Dán PPF USA', 'dan-ppf-usa-chinh-hang-bao-ve-dien-thoai-toan-dien-tai-phu-kien-88', 'ppf-3'],
+  ['Thay kính cường lực', 'dan-cuong-luc-bao-ve-man-hinh-dien-thoai-tai-phu-kien-88', 'cuong-luc-2'],
+  ['Thay màn hình, thay vỏ điện thoại', 'thay-vo-dien-thoai-doi-moi-ngoai-hinh-tai-phu-kien-88', 'mh'],
+  ['Sửa chữa điện thoại', 'sua-chua-dien-thoai-khoi-phuc-hieu-nang-tai-phu-kien-88', 'sua-dt'],
+  ['Thay pin điện thoại', 'thay-pin-chinh-hang-an-toan-ben-bi-tai-phu-kien-88', 'thay-pin'],
+];
+
+// [tên, slug sản phẩm, ảnh]
+const PROMO = [
+  ['ỐP LƯNG EARL III - SANG TRỌNG & ĐẲNG CẤP', 'op-lung-earl-iii-sang-trong-dang-cap', '2025_09/oplungitem11'],
+  ['Cường lực iPad WIWU iVISTA', 'cuong-luc-ipad-wiwu-ivista', '2025_09/cuonglucitem1'],
+  ['Cáp sạc nhanh WIWU Titan 4in1 100W Wi-C039', 'cap-sac-nhanh-wiwu-titan-4in1-100w-wi-c039', '2025_09/capsacitem31'],
+  ['CÁP SẠC NHANH BASEUS USB TO IP', 'cap-sac-nhanh-baseus-usb-to-ip', '2025_09/capsacitem21'],
+  ['CÁP SẠC NHANH AN TOÀN, BẢO VỆ MÁY CHỐNG CHAI PIN', 'cap-sac-nhanh-an-toan-bao-ve-may-chong-chai-pin', '2025_09/capsacitem11'],
+  ['LOA BLUETOOTH HOCO HC9 – NHỎ GỌN, ÂM CỰC CHẤT', 'loa-bluetooth-hoco-hc9-nho-gon-am-cuc-chat', '2025_09/phukienitem21'],
+  ['Hub 4 cổng Hoco HB26 Type-C', 'hub-4-cong-hoco-hb26-type-c', '2025_09/phukienitem31'],
+  ['Loa karaoke KIMISO KMS-197', 'loa-karaoke-kimiso-kms-197', '2025_09/phukienitem11'],
+  ['ỐP LƯNG MAGSAFE LOANG MÀU - ĐƠN GIẢN NHƯNG ĐỘC ĐÁO!', 'op-lung-magsafe-loang-mau-don-gian-nhung-doc-dao', '2025_09/oplungitem41'],
+  ['Ốp lưng X&M Vân caro thiết kế tỉ mỉ, họa tiết độc đáo cho IPhone siêu đẹp', 'op-lung-x-m-van-caro-thiet-ke-ti-mi-hoa-tiet-doc-dao-cho-iphone-sieu-dep', '2025_09/oplungitem31'],
+  ['Ốp lưng Gear4 Cry Palace cho iPhone', 'op-lung-gear4-cry-palace-cho-iphone', '2025_09/oplungitem21'],
+];
+
+// Nhóm sản phẩm theo đúng thứ tự trang gốc: [tên nhóm, slug danh mục, sản phẩm]
+const GROUPS = [
+  ['Kính Cường Lực - Dán Mặt Trước', 'kinh-cuong-luc-dan-mat-truoc', [
+    ['CƯỜNG LỰC ANANK SAMSUNG S25ULTRA', 'cuong-luc-anank-samsung-s25ultra', '2025_09/cuonglucitem22'],
+    ['Cường lực iPad WIWU iVISTA', 'cuong-luc-ipad-wiwu-ivista', '2025_09/cuonglucitem1'],
+    ['Cường lực KUZOOM cho Z Fold 7', 'cuong-luc-kuzoom-cho-z-fold-7', '2025_09/539777817_825394456485964_5578178569965910888_n'],
+    ['KÍNH CƯỜNG LỰC IPHONE 17 URR', 'kinh-cuong-luc-iphone-17-urr', '2025_09/540706896_826252623066814_5879223999035774629_n'],
+    ['SIÊU PHẨM CƯỜNG LỰC HODA – DÀNH CHO iPHONE 17 PRO MAX (6.9”)', 'sieu-pham-cuong-luc-hoda-danh-cho-iphone-17-pro-max-6-9', '2025_09/543163285_830782825947127_7239795786578079025_n'],
+  ]],
+  ['Dán PPF USA - Dán mặt sau', 'dan-ppf', [
+    ['Dán PPF USA iPhone 16promax Sa Mạc', 'dan-ppf-usa-iphone-16promax-sa-mac', '2026_05/469533755_122120707178575654_4840219395159464176_n'],
+    ['Dán PPF USA Full iPhone 17 Pro Max', 'dan-ppf-usa-full-iphone-17-pro-max', '2025_09/danppf1'],
+  ]],
+  ['Cáp Sạc và Bộ Sạc', 'cap-sac-va-bo-sac', [
+    ['Cáp sạc nhanh WIWU Titan 4in1 100W Wi-C039', 'cap-sac-nhanh-wiwu-titan-4in1-100w-wi-c039', '2025_09/capsacitem31'],
+    ['CÁP SẠC NHANH AN TOÀN, BẢO VỆ MÁY CHỐNG CHAI PIN', 'cap-sac-nhanh-an-toan-bao-ve-may-chong-chai-pin', '2025_09/capsacitem11'],
+    ['CÁP SẠC NHANH BASEUS USB TO IP', 'cap-sac-nhanh-baseus-usb-to-ip', '2025_09/capsacitem21'],
+    ['Bộ Sạc Nhanh Voltme 30W Lite', 'bo-sac-nhanh-voltme-30w-lite', '2025_09/533554901_816478427377567_5868978113130109520_n'],
+    ['Bộ sạc nhanh Hoco N42 - 45W', 'bo-sac-nhanh-hoco-n42-45w', '2025_09/536283515_818871550471588_8982804306405896797_n'],
+    ['CÁP SẠC PISEN 2 TRONG 1', 'cap-sac-pisen-2-trong-1', '2025_09/539410034_824594573232619_4884019820248701381_n'],
+  ]],
+  ['Ốp Lưng Điện Thoại', 'op-lung-dien-thoai', [
+    ['ỐP LƯNG MAGSAFE LOANG MÀU - ĐƠN GIẢN NHƯNG ĐỘC ĐÁO!', 'op-lung-magsafe-loang-mau-don-gian-nhung-doc-dao', '2025_09/oplungitem41'],
+    ['Ốp lưng X&M Vân caro thiết kế tỉ mỉ, họa tiết độc đáo cho IPhone siêu đẹp', 'op-lung-x-m-van-caro-thiet-ke-ti-mi-hoa-tiet-doc-dao-cho-iphone-sieu-dep', '2025_09/oplungitem31'],
+    ['Ốp lưng Gear4 Cry Palace cho iPhone', 'op-lung-gear4-cry-palace-cho-iphone', '2025_09/oplungitem21'],
+    ['ỐP LƯNG EARL III - SANG TRỌNG & ĐẲNG CẤP', 'op-lung-earl-iii-sang-trong-dang-cap', '2025_09/oplungitem11'],
+    ['Ốp lưng Likgus', 'op-lung-likgus', '2025_09/544918614_832307279128015_1688277848361884812_n'],
+  ]],
+  ['Lens Bảo Vệ Camera', 'lens-bao-ve-camera', [
+    ['LENS CAM SAMSUNG S26 ULTRA ANANK', 'lens-cam-samsung-s26-ultra-anank', '2026_05/len_samsumg'],
+    ['BẢO VỆ CAMERA IPHONE 15 PRO / 15 PRO MAX – HODA SAPPHIRE FLAMED TITANIUM', 'hoda-sapphire-flamed-titanium', '2026_05/lenbaovecamera'],
+    ['BẢO VỆ CAMERA IPHONE 17 KÍNH SAPPHIRE', 'bao-ve-camera-iphone-17-kinh-sapphire', '2025_09/542753584_831630592529017_2212026673182531969_n'],
+  ]],
+  ['Loa Bluetooth và Loa Karaoke', 'loa-bluetooth-va-loa-karaoke', [
+    ['LOA BLUETOOTH HOCO MINI', 'loa-bluetooth-hoco-mini', '2026_05/680434838_122195298656575654_6556540949232001927_n'],
+    ['LOA BLUETOOTH THỂ THAO BOROFONE BR19', 'loa-bluetooth-the-thao-borofone-br19', '2026_05/698875783_122197502078575654_1494428041211985928_n'],
+    ['LOA BLUETOOTH HOCO BS51', 'loa-bluetooth-hoco-bs51', '2026_05/702094595_122197725224575654_3694746109749053624_n'],
+    ['LOA BLUETOOTH HOCO HC9 – NHỎ GỌN, ÂM CỰC CHẤT', 'loa-bluetooth-hoco-hc9-nho-gon-am-cuc-chat', '2025_09/phukienitem21'],
+    ['Loa karaoke KIMISO KMS-197', 'loa-karaoke-kimiso-kms-197', '2025_09/phukienitem11'],
+  ]],
+  ['Phụ Kiện Game và Laptop', 'phu-kien-game-va-laptop', [
+    ['Loa bluetooth WIWU Thunder P40', 'loa-bluetooth-wiwu-thunder-p40', '2026_05/605425015_122181414422575654_4868290603614364238_n'],
+    ['Chuột không dây WIWU WIMICE WM113', 'chuot-khong-day-wiwu-wimice-wm113', '2026_05/606892877_122181414500575654_2954766889215589801_n'],
+    ['Tai nghe chụp tai không dây ROCK O3 ANC', 'tai-nghe-chup-tai-khong-day-rock-o3-anc', '2026_05/606909875_122181414428575654_6492410855850025023_n'],
+    ['GIÁ ĐỠ LAPTOP WIWU S400 PRO', 'gia-do-laptop-wiwu-s400-pro', '2026_05/698719682_122197202642575654_4575091216415879698_n'],
+    ['Hub 4 cổng Hoco HB26 Type-C', 'hub-4-cong-hoco-hb26-type-c', '2025_09/phukienitem31'],
+  ]],
+];
+
+const BRANCHES = [
+  ['Phụ Kiện 88 - Bến Tre', '35 Đoàn Hoàng Minh, P. Phú Khương, Bến Tre, Việt Nam', 'https://maps.app.goo.gl/X7S8DFZJVAsD2u1R8'],
+  ['Phụ Kiện 88 - Vĩnh Long', '120 Trưng Nữ Vương, Phường Long Châu, Vĩnh Long', 'https://maps.app.goo.gl/snwLmEyee6pgReQw5'],
+  ['Phụ Kiện 88 - Cần Thơ', '94 Đ. Trần Hưng Đạo, Thới Bình, Ninh Kiều, Cần Thơ', 'https://maps.app.goo.gl/iG9hEbpaA2z4Y4ca9'],
+  // Trang gốc đang dùng chung link bản đồ với chi nhánh Cần Thơ
+  ['Phụ Kiện 88 - Trà Vinh', '29 Nguyễn Đáng, Phường 6, Tp.Trà Vinh', 'https://maps.app.goo.gl/iG9hEbpaA2z4Y4ca9'],
+];
+
+const NEWS_HOT = [
+  ['Bảng giá thay màn hình điện thoại mới nhất 2026 | Phụ Kiện 88', 'Tin-tuc/bang-gia-thay-man-hinh-dien-thoai-moi-nhat-2026-54', '2026_05/banggiathaymanhinh1', '25/05/2026',
+   'Cập nhật bảng giá thay màn hình, ép kính điện thoại iPhone, Samsung, Oppo mới nhất 2026. Linh kiện chính hãng, bảo hành dài hạn tại Bến Tre, Vĩnh Long, Cần Thơ.'],
+  ['Điện thoại nóng ran khi chơi game mùa hè: Nguyên nhân & Khắc phục', 'Tin-tuc/dien-thoai-nong-ran-khi-choi-game-61', '2026_06/dienthoainongran'],
+  ['Vì sao Phụ Kiện 88 là điểm đến tin cậy sửa điện thoại tại Miền Tây?', 'Tin-tuc/phu-kien-88-diem-den-tin-cay-sua-dien-thoai-58', '2026_05/vi_sao_phukien88_la_diemden_tincay'],
+];
+const NEWS_NEW = [
+  ['Ốp Lưng iPhone 18 Pro Max: Chọn Loại Nào Phù Hợp Với Nhu Cầu?', 'op-lung-iphone-18-pro-max-94', '2026_09/pk88', '29/09/2026'],
+  ['Ốp Lưng Chống Sốc: Tiêu Chí Lựa Chọn Và Những Điểm Cần Lưu Ý', 'op-lung-chong-soc-93', '2026_09/oplung', '11/09/2026'],
+  ['Pin Dự Phòng: Cách Chọn Dung Lượng, Công Suất Và Loại Pin Phù Hợp', 'pin-du-phong-92', '2026_09/pin', '09/09/2026'],
+  ['iPhone 18 Sắp Ra Mắt: Những Phụ Kiện Nên Chuẩn Bị Khi Đổi Điện Thoại Mới', 'phu-kien-iphone-18-91', '2026_09/p3', '04/09/2026'],
+];
+
+const GALLERY = ['anh3', 'anh9', 'anh10', 'anh8', 'anh6', 'anh14', 'anh12', 'anh13', 'anh5', 'anh11'];
+
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+const img = p => `images/${p}.webp`;
+const card = ([n, slug, im]) => `<a class="card" href="${S}/san-pham/${slug}/"><img src="${img(im)}" alt="${esc(n)}" loading="lazy"><h3>${esc(n)}</h3><span class="cta">Xem chi tiết →</span></a>`;
+
+$('cats').innerHTML = CATS.map(([n, slug, im]) => `<a href="${S}/san-pham/${slug}/"><img src="${img(im)}" alt="" loading="lazy">${esc(n)}</a>`).join('');
+$('navCats').innerHTML = CATS.map(([n, slug]) => `<a href="${S}/san-pham/${slug}/">${esc(n)}</a>`).join('');
+$('svc').innerHTML = SERVICES.map(([n, slug, im]) => `<a href="${S}/page/${slug}.html"><img src="images/images/${im}.webp" alt="${esc(n)}" loading="lazy"><span>${esc(n)}</span></a>`).join('');
+$('promo').innerHTML = PROMO.map(card).join('');
+
+function showGroup(i) {
+  const [, slug, items] = GROUPS[i];
+  $('products').innerHTML = items.map(card).join('');
+  $('moreLink').href = `${S}/san-pham/${slug}/`;
+  [...$('tabs').children].forEach((b, j) => { b.classList.toggle('on', i === j); b.setAttribute('aria-selected', i === j); });
+}
+$('tabs').innerHTML = GROUPS.map(([n], i) => `<button role="tab" data-i="${i}">${esc(n)}</button>`).join('');
+$('tabs').addEventListener('click', e => { if (e.target.dataset.i) showGroup(+e.target.dataset.i); });
+showGroup(0);
+
+$('gallery').innerHTML = GALLERY.map(n => `<img src="images/slider/${n}.webp" alt="Hình ảnh hoạt động của Phụ Kiện 88" loading="lazy">`).join('');
+
+$('branches').innerHTML = BRANCHES.map(([n, addr, map]) => `<div class="branch"><h3>${n}</h3>
+  <p><b>Địa chỉ:</b> ${addr}</p><p><b>SĐT:</b> <a href="tel:0833898688">0833 898 688</a></p><p><b>Giờ mở cửa:</b> Từ 07h00 – 22h00 hàng ngày</p>
+  <div class="row"><a class="btn" href="tel:0833898688">Gọi ngay</a><a class="btn ghost" href="${map}" target="_blank" rel="noopener">Bản đồ</a></div></div>`).join('');
+
+const newsCard = ([t, slug, im, date, lead], big) => `<a class="${big ? 'lead' : ''}" href="${S}/news/${slug}.html"><img src="${img(im)}" alt="${esc(t)}" loading="lazy"><div><h3>${esc(t)}</h3>${lead ? `<p>${esc(lead)}</p>` : ''}${date ? `<time>${date}</time>` : ''}</div></a>`;
+$('newsHot').innerHTML = NEWS_HOT.map((n, i) => newsCard(n, i === 0)).join('');
+$('newsNew').innerHTML = NEWS_NEW.map(n => newsCard(n)).join('');
+
+const nav = $('nav');
+$('menuBtn').addEventListener('click', () => nav.classList.toggle('open'));
+nav.addEventListener('click', e => { if (e.target.closest('a')) nav.classList.remove('open'); });
+</script>
+</body>
+</html>
